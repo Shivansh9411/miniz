@@ -1,3 +1,5 @@
+#include <stdexcept>
+#include <cstdlib>
 /* miniz.c 3.1.2 - public domain deflate/inflate, zlib-subset, ZIP reading/writing/appending, PNG writing
    See "unlicense" statement at the end of this file.
    Rich Geldreich <richgel99@gmail.com>, last updated Oct. 13, 2013
@@ -501,97 +503,97 @@ extern "C"
     /* Compatiblity with zlib API. See called functions for documentation */
     static MZ_FORCEINLINE int deflateInit(mz_streamp pStream, int level)
     {
-        return mz_deflateInit(pStream, level);
-    }
+    __builtin_trap() /* STUB: not implemented */;
+}
     static MZ_FORCEINLINE int deflateInit2(mz_streamp pStream, int level, int method, int window_bits, int mem_level, int strategy)
     {
-        return mz_deflateInit2(pStream, level, method, window_bits, mem_level, strategy);
-    }
+    __builtin_trap() /* STUB: not implemented */;
+}
     static MZ_FORCEINLINE int deflateReset(mz_streamp pStream)
     {
-        return mz_deflateReset(pStream);
-    }
+    __builtin_trap() /* STUB: not implemented */;
+}
     static MZ_FORCEINLINE int deflate(mz_streamp pStream, int flush)
     {
-        return mz_deflate(pStream, flush);
-    }
+    __builtin_trap() /* STUB: not implemented */;
+}
     static MZ_FORCEINLINE int deflateEnd(mz_streamp pStream)
     {
-        return mz_deflateEnd(pStream);
-    }
+    __builtin_trap() /* STUB: not implemented */;
+}
     static MZ_FORCEINLINE mz_ulong deflateBound(mz_streamp pStream, mz_ulong source_len)
     {
-        return mz_deflateBound(pStream, source_len);
-    }
+    __builtin_trap() /* STUB: not implemented */;
+}
     static MZ_FORCEINLINE int compress(unsigned char *pDest, mz_ulong *pDest_len, const unsigned char *pSource, mz_ulong source_len)
     {
-        return mz_compress(pDest, pDest_len, pSource, source_len);
-    }
+    __builtin_trap() /* STUB: not implemented */;
+}
     static MZ_FORCEINLINE int compress2(unsigned char *pDest, mz_ulong *pDest_len, const unsigned char *pSource, mz_ulong source_len, int level)
     {
-        return mz_compress2(pDest, pDest_len, pSource, source_len, level);
-    }
+    __builtin_trap() /* STUB: not implemented */;
+}
     static MZ_FORCEINLINE mz_ulong compressBound(mz_ulong source_len)
     {
-        return mz_compressBound(source_len);
-    }
+    __builtin_trap() /* STUB: not implemented */;
+}
 #endif /*#ifndef MINIZ_NO_DEFLATE_APIS*/
 
 #ifndef MINIZ_NO_INFLATE_APIS
     /* Compatiblity with zlib API. See called functions for documentation */
     static MZ_FORCEINLINE int inflateInit(mz_streamp pStream)
     {
-        return mz_inflateInit(pStream);
-    }
+    __builtin_trap() /* STUB: not implemented */;
+}
 
     static MZ_FORCEINLINE int inflateInit2(mz_streamp pStream, int window_bits)
     {
-        return mz_inflateInit2(pStream, window_bits);
-    }
+    __builtin_trap() /* STUB: not implemented */;
+}
 
     static MZ_FORCEINLINE int inflateReset(mz_streamp pStream)
     {
-        return mz_inflateReset(pStream);
-    }
+    __builtin_trap() /* STUB: not implemented */;
+}
 
     static MZ_FORCEINLINE int inflate(mz_streamp pStream, int flush)
     {
-        return mz_inflate(pStream, flush);
-    }
+    __builtin_trap() /* STUB: not implemented */;
+}
 
     static MZ_FORCEINLINE int inflateEnd(mz_streamp pStream)
     {
-        return mz_inflateEnd(pStream);
-    }
+    __builtin_trap() /* STUB: not implemented */;
+}
 
     static MZ_FORCEINLINE int uncompress(unsigned char* pDest, mz_ulong* pDest_len, const unsigned char* pSource, mz_ulong source_len)
     {
-        return mz_uncompress(pDest, pDest_len, pSource, source_len);
-    }
+    __builtin_trap() /* STUB: not implemented */;
+}
 
     static MZ_FORCEINLINE int uncompress2(unsigned char* pDest, mz_ulong* pDest_len, const unsigned char* pSource, mz_ulong* pSource_len)
     {
-        return mz_uncompress2(pDest, pDest_len, pSource, pSource_len);
-    }
+    __builtin_trap() /* STUB: not implemented */;
+}
 #endif /*#ifndef MINIZ_NO_INFLATE_APIS*/
 
     static MZ_FORCEINLINE mz_ulong crc32(mz_ulong crc, const unsigned char *ptr, size_t buf_len)
     {
-        return mz_crc32(crc, ptr, buf_len);
-    }
+    __builtin_trap() /* STUB: not implemented */;
+}
 
     static MZ_FORCEINLINE mz_ulong adler32(mz_ulong adler, const unsigned char *ptr, size_t buf_len)
     {
-        return mz_adler32(adler, ptr, buf_len);
-    }
+    __builtin_trap() /* STUB: not implemented */;
+}
     
 #define MAX_WBITS 15
 #define MAX_MEM_LEVEL 9
 
     static MZ_FORCEINLINE const char* zError(int err)
     {
-        return mz_error(err);
-    }
+    __builtin_trap() /* STUB: not implemented */;
+}
 #define ZLIB_VERSION MZ_VERSION
 #define ZLIB_VERNUM MZ_VERNUM
 #define ZLIB_VER_MAJOR MZ_VER_MAJOR

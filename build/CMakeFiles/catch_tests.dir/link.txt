@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wno-error -Wno-unused-parameter -Wno-unused-variable -Wno-unused-but-set-variable -Wno-unused-function -Wno-type-limits -O3 -DNDEBUG CMakeFiles/catch_tests.dir/tests/main.cpp.o CMakeFiles/catch_tests.dir/tests/catch_amalgamated.cpp.o -o ../bin/catch_tests  libminiz.a 

@@ -1,0 +1,16 @@
+Performing C SOURCE FILE Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY failed with the following output:
+Change Dir: /home/ec2-user/shivansh/kaiju-harness/repos_staging/miniz/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_41b7b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_41b7b.dir/build.make CMakeFiles/cmTC_41b7b.dir/build
+gmake[1]: Entering directory '/home/ec2-user/shivansh/kaiju-harness/repos_staging/miniz/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_41b7b.dir/src.c.o
+/usr/bin/cc -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY  -Wshadow -Wformat=2 -Wall -Wno-overlength-strings -pedantic    -fvisibility-inlines-hidden -o CMakeFiles/cmTC_41b7b.dir/src.c.o -c /home/ec2-user/shivansh/kaiju-harness/repos_staging/miniz/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command-line option '-fvisibility-inlines-hidden' is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_41b7b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41b7b.dir/link.txt --verbose=1
+/usr/bin/cc  -Wshadow -Wformat=2 -Wall -Wno-overlength-strings -pedantic  CMakeFiles/cmTC_41b7b.dir/src.c.o -o cmTC_41b7b 
+gmake[1]: Leaving directory '/home/ec2-user/shivansh/kaiju-harness/repos_staging/miniz/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
